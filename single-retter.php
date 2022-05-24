@@ -26,7 +26,7 @@ while ( have_posts() ) :
 </main>
 <script>
 	let retter = []
-	const url = "charlottefranciska.dk/kea/rosetta/wp-json/wp/v2/ret?per_page=100";
+	const url = "https://charlottefranciska.dk/kea/rosetta/wp-json/wp/v2/ret?per_page=100";
 async function getJson (){
 	let response = await fetch(url);
 	retter = await response.json (); 
