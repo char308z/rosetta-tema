@@ -21,10 +21,22 @@ while ( have_posts() ) :
 		</header>
 	<?php endif; ?>
 	<div class="page-content">
-		
 	</div>
 
 </main>
+<script>
+	let retter = []
+	const url ="charlottefranciska.dk/kea/rosetta/wp-json/wp/v2/ret?per_page=100";
+async function getJson (){
+	let response = await fetch(url);
+	retter = await response.json (); 
+		visRetter ();
+}
 
+function visRetter (){
+	console.log(retter)
+}
+
+</script>
 	<?php
 endwhile;
