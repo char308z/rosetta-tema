@@ -9,10 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-<?php
-while ( have_posts() ) :
-	the_post();
-	?>
 
 <main id="content" <?php post_class( 'site-main' ); ?> role="main">
 	<div class="page-content">
