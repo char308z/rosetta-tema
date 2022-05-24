@@ -29,7 +29,7 @@ while ( have_posts() ) :
 	const url = "http://charlottefranciska.dk/kea/rosetta/wp-json/wp/v2/retter";
 async function getJson (){
 	let response = await fetch(url);
-	retter = await response.json (); 
+	retter = await response.json(); 
 		visRetter ();
 }
 
