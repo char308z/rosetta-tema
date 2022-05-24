@@ -16,6 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 </main>
 <script>
+	console.log("så er vi her")
 	let retter = []
 	const url = "http://charlottefranciska.dk/kea/rosetta/wp-json/wp/v2/retter";
 async function getJson (){
