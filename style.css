@@ -5,10 +5,10 @@ Version:     1.0.1
 Description:  Hello Elementor Child Theme
 Author:      Gruppe 12
 */
+.valgt {
+  color: red;
+}
 
-h1 {
-font-family: aw-conqueror-didot, serif;
-    font-weight: 700;
-    font-style: bold;
-    color: #83363D;
+.navn {
+  display: block;
 }
