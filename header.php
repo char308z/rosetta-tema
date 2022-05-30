@@ -19,6 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<meta name="viewport" content="<?php echo esc_attr( $viewport_content ); ?>">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.typekit.net/xwp2cjy.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/custom.css">
 	<?php wp_head(); ?>
 	
 </head>

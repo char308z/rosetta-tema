@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+img {
+  max-width: 100%;
+}
+
+#deliTitle {
+  font-size: 2rem;
+}
+
+#loopView {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 2rem;
+}
