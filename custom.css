@@ -94,13 +94,13 @@ aside article img {
 
 #lukKnap {
   position: absolute;
-  right: 32px;
-  top: 32px;
+  left: 3rem;
+  top: 9rem;
   width: 32px;
   height: 32px;
-  opacity: 0.3;
+  opacity: 0.5;
 }
-#lukKnap :hover {
+#lukKnap:hover {
   opacity: 1;
 }
 #lukKnap:before,
@@ -108,8 +108,8 @@ aside article img {
   position: absolute;
   left: 15px;
   content: " ";
-  height: 33px;
-  width: 2px;
+  height: 20px;
+  width: 1px;
   background-color: #333;
 }
 #lukKnap:before {

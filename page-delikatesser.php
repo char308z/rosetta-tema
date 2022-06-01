@@ -15,9 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 <aside id="popup">
-      <a href="#" id="lukKnap">X</a>
-
       <article>
+		<a href="#" id="lukKnap"></a>
         <img src="" alt="" />
         <h3 id="popupTitle" class="navn"></h3>
         <p class="langbeskrivelse"></p>
@@ -29,15 +28,7 @@ get_header();
 <main>
 	<h1>Delikatesser</h1>
 	 <nav id="knapper">      
-		<button data-kategorier="alle" class="valgt"></button>
-        <button data-kategorier="balsamico"></button>
-        <button data-kategorier="chips"></button>
-        <button data-kategorier="dolci"></button>
-		<button data-kategorier="fisk"></button>
-		<button data-kategorier="kaffe"></button>
-		<button data-kategorier="nodder"></button>
-		<button data-kategorier="oliven"></button>
-		<button data-kategorier="olivenolie"></button>
+		<button></button>
 	</nav>
 	<section id="loopView"></section>
 
