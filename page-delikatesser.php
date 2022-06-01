@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 <aside id="popup">
-      <button id="lukKnap">X</button>
+      <a href="#" id="lukKnap">X</a>
 
       <article>
         <img src="" alt="" />
