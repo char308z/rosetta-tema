@@ -27,7 +27,7 @@ h1 {
 }
 
 h4 {
-  color: ;
+  color: secondary;
   font-weight: bold;
 }
 main nav {
@@ -93,16 +93,30 @@ aside article img {
 }
 
 #lukKnap {
-  position: relative;
-  font-size: 1.75em;
-  top: 26%;
-  left: 11%;
-  font-weight: lighter;
-  cursor: pointer;
-
-  font-family: pentz-regular, serif;
-
-  color: #333;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+#lukKnap :hover {
+  opacity: 1;
+}
+#lukKnap:before,
+#lukKnap:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+#lukKnap:before {
+  transform: rotate(45deg);
+}
+#lukKnap:after {
+  transform: rotate(-45deg);
 }
 
 #popupTitle {
