@@ -18,10 +18,11 @@ get_header();
       <article>
 		<a href="#" id="lukKnap"></a>
         <img src="" alt="" />
+		<div id="popupIndhold">
         <h3 id="popupTitle" class="navn"></h3>
         <p class="langbeskrivelse"></p>
         <h4 class="pris"></h4>
-		<button>Tilføj</button>
+		<button>Tilføj</button></div>
       </article>
     </aside>
 

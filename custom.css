@@ -27,8 +27,11 @@ h1 {
 }
 
 h4 {
-  color: secondary;
+  color: red;
   font-weight: bold;
+}
+html p {
+  max-width: 65ch;
 }
 main nav {
   grid-column: 1/2;
@@ -62,7 +65,8 @@ section article {
   flex-direction: column;
 }
 
-section article button {
+section article button,
+aside article button {
   place-self: end;
 }
 
@@ -74,28 +78,35 @@ aside {
   right: 0%;
   width: 100wv;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(61, 10, 10, 0.144);
   overflow: scroll;
 }
 
 aside article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 86vw;
   margin: 8rem auto;
-  border-radius: 12.5px;
-  padding: 12% 2% 2%;
+  border-radius: 10px;
+  padding: 2% 2% 2%;
   object-fit: contain;
-  background-color: #f8e7ba;
+  background-color: #fffcf5;
 }
 
 aside article img {
+  grid-column: 1/2;
   object-fit: contain;
   height: unset;
 }
 
+#popupIndhold {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
 #lukKnap {
-  position: absolute;
-  left: 3rem;
-  top: 9rem;
+  position: relative;
   width: 32px;
   height: 32px;
   opacity: 0.5;
@@ -110,7 +121,7 @@ aside article img {
   content: " ";
   height: 20px;
   width: 1px;
-  background-color: #333;
+  background-color: #81353c;
 }
 #lukKnap:before {
   transform: rotate(45deg);
