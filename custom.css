@@ -4,6 +4,10 @@
   margin: 0%;
 }
 
+.h1-overskrift {
+  color: aqua;
+}
+
 img {
   max-width: 100%;
 }
