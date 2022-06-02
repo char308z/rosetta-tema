@@ -25,6 +25,7 @@ h1 {
   grid-row: 1/2;
   font-size: 3.5rem;
   text-align: center;
+  color: pink;
 }
 
 h3 {
