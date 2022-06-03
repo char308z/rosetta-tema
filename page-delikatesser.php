@@ -20,7 +20,8 @@ get_header();
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/lkk7jgs.css" />
     <title>singleView</title>
   </head>
   <body>
@@ -42,7 +43,7 @@ get_header();
       <nav id="knapper">
         <button></button>
       </nav>
-	  <div id="deliDetalje"></div>
+      <div id="deliDetalje"></div>
 
       <section id="loopView"></section>
     </main>
@@ -53,8 +54,10 @@ get_header();
         <div id="deliIndhold">
           <h3 id="deliTitle" class="navn">Navn</h3>
           <p id="deliBeskrivelse" class="beskrivelse"></p>
-          <h4 class="pris"></h4>
-          <button>Tilføj</button>
+          <div class="pristilfoej">
+            <h4 class="pris"></h4>
+            <button>Tilføj</button>
+          </div>
         </div>
       </article>
     </template>
@@ -93,7 +96,7 @@ get_header();
         console.log("vi laver knapper");
         knapListe.textContent = "";
         kategorier.forEach((kategori) => {
-          knapListe.innerHTML += `<button  data-kategorier="${kategori.id}">${kategori.name}</button>`;
+          knapListe.innerHTML += `<button class="navknap"  data-kategorier="${kategori.id}">${kategori.name}</button>`;
         });
 
         addEventListenerTilKnap();
