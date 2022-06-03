@@ -42,6 +42,8 @@ get_header();
       <nav id="knapper">
         <button></button>
       </nav>
+	  <div id="deliDetalje"></div>
+
       <section id="loopView"></section>
     </main>
 
