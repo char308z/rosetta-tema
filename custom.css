@@ -292,6 +292,11 @@ img {
 }
 
 @media (max-width: 700px) {
+  .dropbtn,
+  #myDropdown button {
+    font-size: 0.5em;
+  }
+
   /* #knapper {
     display: flex;
     flex-direction: row;
