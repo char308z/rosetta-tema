@@ -243,7 +243,8 @@ img {
   border: 1px solid #92d3ec; */
 }
 
-.dropbtn {
+.dropbtn,
+#myDropdown button {
   display: grid;
   place-self: center;
   margin-bottom: 5px;
