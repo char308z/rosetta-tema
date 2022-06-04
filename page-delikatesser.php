@@ -14,17 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="custom.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/lkk7jgs.css" />
-    <title>singleView</title>
-  </head>
-  <body>
+
     <aside id="popup">
       <article>
         <a href="#" id="lukKnap"></a>
@@ -149,8 +139,7 @@ get_header();
           .addEventListener("click", () => (popup.style.display = "none"));
       }
     </script>
-  </body>
-</html>
+ 
 
 <?php
 get_footer();
