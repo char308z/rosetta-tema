@@ -55,7 +55,7 @@ get_header();
           <p id="deliBeskrivelse" class="beskrivelse"></p>
           <div class="pristilfoej">
             <h4 class="pris"></h4>
-            <button>Tilføj</button>
+            <button id="tilfoej-hover">Tilføj</button>
           </div>
         </div>
       </article>

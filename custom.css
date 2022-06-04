@@ -217,7 +217,7 @@ img {
 
 .dropbtn:hover,
 #myDropdown button:hover,
-.pristilfoej button:hover {
+#tilfoej-hover:hover {
   background-color: #38471d;
   color: #fffcf5 !important;
 }
