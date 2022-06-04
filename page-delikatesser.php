@@ -150,6 +150,7 @@ get_header();
         document
           .querySelector("#lukKnap")
           .addEventListener("click", () => (popup.style.display = "none"));
+          popup.addEventListener("click", () => (popup.style.display= "none"))
       }
 
       function toggleDropdown() {
