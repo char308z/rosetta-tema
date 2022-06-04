@@ -214,6 +214,10 @@ aside article img {
   transform: rotate(-45deg);
 }
 
+#delikatesser-overskrift {
+  margin-top: 20%;
+}
+
 /*DROPDOWN*/
 img {
   width: 100%;

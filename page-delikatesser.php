@@ -29,7 +29,7 @@ get_header();
     </aside>
 
     <main>
-      <h1>Delikatesser</h1>
+      <h1 id="delikatesser-overskrift">Delikatesser</h1>
       <div class="delikatesser-grid">
         <nav id="knapper">
           <div class="dropdown">
