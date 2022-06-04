@@ -38,7 +38,7 @@ get_header();
               Vælg en kategori
             </button>
             <div id="myDropdown" class="dropdown-content">
-              <button></button>
+              <!-- <button></button> -->
             </div>
           </div>
         </nav>
