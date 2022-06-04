@@ -81,8 +81,6 @@ main nav {
 
 .pris {
   font-family: raleway, sans-serif;
-  font-size: 1.7rem;
-  color: #38471d;
 }
 
 section article {
@@ -248,15 +246,19 @@ img {
 
 @media (max-width: 700px) {
   #deliTitle {
-    font-size: 0.7rem;
+    font-size: 1.5rem;
     color: #38471d;
   }
 
   #deliBeskrivelse {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: #81353c;
   }
 
+  .pris {
+    font-size: 1rem;
+    color: #38471d;
+  }
   .dropdown-content {
     min-width: 150px;
   }
@@ -326,5 +328,10 @@ img {
   #deliBeskrivelse {
     font-size: 1rem;
     color: #81353c;
+  }
+
+  .pris {
+    font-size: 1.7rem;
+    color: #38471d;
   }
 }
