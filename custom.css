@@ -235,6 +235,13 @@ img {
   display: grid;
   place-self: center;
   margin-bottom: 5px;
+  border: 1px solid #38471d;
+}
+
+.dropbtn:hover,
+#myDropdown button {
+  background-color: #38471d;
+  color: #fffcf5;
 }
 
 .dropdown {
@@ -262,6 +269,11 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.delikatesse-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 @media (max-width: 700px) {
