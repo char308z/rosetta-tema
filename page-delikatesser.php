@@ -30,6 +30,7 @@ get_header();
 
     <main>
       <h1>Delikatesser</h1>
+      <div class="delikatesser-grid">
         <nav id="knapper">
           <div class="dropdown">
             <!-- <option value="">Vælg</option> -->
@@ -41,9 +42,9 @@ get_header();
             </div>
           </div>
         </nav>
-        <div id="deliDetalje"></div>
+        </div>
         <section id="loopView"></section> 
- 
+ <div id="deliDetalje"></div>
     </main>
 
     <template>

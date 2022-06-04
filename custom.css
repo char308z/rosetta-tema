@@ -54,12 +54,12 @@ main nav {
   grid-row: 2/3;
 }
 
-#knapper {
+/* #knapper {
   display: flex;
   flex-direction: column;
   position: fixed;
   top: 20%;
-}
+} */
 
 .navknap {
   max-width: 200px;
@@ -269,10 +269,10 @@ img {
   margin-bottom: 50px;
 }
 
-/* .delikatesse-grid {
+.delikatesse-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-} */
+}
 
 @media (max-width: 700px) {
   #knapper {
