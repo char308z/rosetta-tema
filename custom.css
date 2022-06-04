@@ -219,10 +219,6 @@ img {
   width: 100%;
 }
 
-/* #myDropdown {
-  width: 500px;
-} */
-
 #myDropdown button,
 .dropbtn {
   width: 100%;
@@ -231,7 +227,6 @@ img {
 }
 
 .dropbtn {
-  /* width: 500px; */
   display: grid;
   place-self: center;
   margin-bottom: 5px;
