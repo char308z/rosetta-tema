@@ -227,11 +227,16 @@ img {
 
 .dropdown-content {
   display: none !important;
+  overflow: auto;
   position: absolute;
   z-index: 1;
   height: 400px;
   border-radius: 5px;
   background-color: #fffcf5;
+}
+
+#myDropdown {
+  width: 100%;
 }
 
 .show {
@@ -242,6 +247,13 @@ img {
 .delikatesse-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 700px) {
@@ -269,7 +281,7 @@ img {
   }
 
   section article {
-    max-width: 300px;
+    max-width: 250px;
   }
   #loopview {
     display: flex;
