@@ -247,6 +247,16 @@ img {
 }
 
 @media (max-width: 700px) {
+  #deliTitle {
+    font-size: 0.7rem;
+    color: #38471d;
+  }
+
+  #deliBeskrivelse {
+    font-size: 0.7rem;
+    color: #81353c;
+  }
+
   .dropdown-content {
     min-width: 150px;
   }
