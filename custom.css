@@ -61,7 +61,7 @@ main nav {
   top: 20%;
 } */
 
-.navknap {
+/* .navknap {
   max-width: 200px;
   max-height: 75px;
   display: flex;
@@ -75,7 +75,7 @@ main nav {
   font-family: aw-conqueror-didot, serif;
   cursor: pointer;
   border-radius: 3px;
-}
+} */
 
 #deliTitle {
   font-size: 1.5rem;
@@ -231,6 +231,10 @@ img {
 #myDropdown button,
 .dropbtn {
   width: 100%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: aw-conqueror-didot, serif;
+  cursor: pointer;
   /* background-color: #f6f6f6 !important;
   border: 1px solid #92d3ec; */
 }
@@ -272,11 +276,11 @@ img {
   gap: 5px;
 }
 
-#filtrering {
+/* #filtrering {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
+} */
 
 .delikatesse-grid {
   display: grid;
