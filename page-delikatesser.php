@@ -31,21 +31,21 @@ get_header();
     <main>
       <h1>Delikatesser</h1>
      <div class="delikatesse-grid">
-      <nav id="knapper">
-        <div class="dropdown">
-          <!-- <option value="">Vælg</option> -->
-          <button onclick="toggleDropdown()" class="dropbtn">
-            Vælg en kategori
-          </button>
-          <div id="myDropdown" class="dropdown-content">
-            <button></button>
+        <nav id="knapper">
+          <div class="dropdown">
+            <!-- <option value="">Vælg</option> -->
+            <button onclick="toggleDropdown()" class="dropbtn">
+              Vælg en kategori
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <button></button>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
-      <div id="deliDetalje"></div>
+        <div id="deliDetalje"></div>
 
-      <section id="loopView"></section>
+        <section id="loopView"></section>
     </div>
     </main>
 

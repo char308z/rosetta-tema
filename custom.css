@@ -271,10 +271,10 @@ img {
   margin-bottom: 50px;
 }
 
-.delikatesse-grid {
+/* .delikatesse-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-}
+} */
 
 @media (max-width: 700px) {
   #knapper {
