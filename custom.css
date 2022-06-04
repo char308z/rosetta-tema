@@ -214,6 +214,56 @@ aside article img {
   transform: rotate(-45deg);
 }
 
+/*DROPDOWN*/
+img {
+  width: 100%;
+}
+
+#myDropdown {
+  width: 500px;
+}
+
+#myDropdown button,
+.dropbtn {
+  width: 100%;
+  /* background-color: #f6f6f6 !important;
+  border: 1px solid #92d3ec; */
+}
+
+.dropbtn {
+  width: 500px;
+  display: grid;
+  place-self: center;
+  margin-bottom: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block !important;
+}
+
+.dropdown-content {
+  display: none !important;
+  position: absolute;
+  min-width: 230px;
+  z-index: 1;
+  height: 400px;
+  overflow: auto;
+  /* border: 1px solid #92d3ec !important; */
+  border-radius: 5px;
+}
+
+.show {
+  display: block !important;
+  gap: 5px;
+}
+
+#filtrering {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 700px) {
   #knapper {
     display: flex;

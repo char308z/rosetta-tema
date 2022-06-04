@@ -30,9 +30,19 @@ get_header();
 
     <main>
       <h1>Delikatesser</h1>
+     
       <nav id="knapper">
-        <button></button>
+        <div class="dropdown">
+          <!-- <option value="">Vælg</option> -->
+          <button onclick="toggleDropdown()" class="dropbtn">
+            Vælg en kategori
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <button></button>
+          </div>
+        </div>
       </nav>
+
       <div id="deliDetalje"></div>
 
       <section id="loopView"></section>
@@ -69,36 +79,40 @@ get_header();
 
       function start() {
         console.log("nu er vi i start");
-
         hentData();
       }
+
       async function hentData() {
         let response = await fetch(deliUrl);
         let kateResponse = await fetch(kateUrl);
 
         delikatesser = await response.json();
         kategorier = await kateResponse.json();
+
         visDelikatesser();
         opretKnapper();
       }
 
       function opretKnapper() {
         console.log("vi laver knapper");
-        knapListe.textContent = "";
+        // knapListe.textContent = "";
         kategorier.forEach((kategori) => {
-          knapListe.innerHTML += `<button class="navknap"  data-kategorier="${kategori.id}">${kategori.name}</button>`;
+          document.querySelector(
+            "#myDropdown"
+          ).innerHTML += `<button class="filter" data-kategorier="${kategori.id}">${kategori.name}</button>`;
         });
 
         addEventListenerTilKnap();
       }
 
       function addEventListenerTilKnap() {
-        document.querySelectorAll("#knapper button").forEach((knap) => {
-          knap.addEventListener("click", filtrerDelikatesser);
+        document.querySelectorAll("#myDropdown button").forEach((elm) => {
+          elm.addEventListener("click", filtrerDelikatesser);
         });
       }
 
       function filtrerDelikatesser() {
+        document.getElementById("myDropdown").classList.toggle("show");
         filter = this.dataset.kategorier;
         console.log(filter);
         visDelikatesser();
@@ -137,6 +151,10 @@ get_header();
         document
           .querySelector("#lukKnap")
           .addEventListener("click", () => (popup.style.display = "none"));
+      }
+
+      function toggleDropdown() {
+        document.getElementById("myDropdown").classList.toggle("show");
       }
     </script>
  
