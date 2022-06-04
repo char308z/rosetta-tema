@@ -223,6 +223,11 @@ img {
   width: 100%;
 }
 
+#knapper {
+  position: sticky;
+  top: 20%;
+}
+
 #myDropdown button,
 .dropbtn {
   width: 100%;
@@ -279,7 +284,7 @@ img {
 }
 
 @media (max-width: 700px) {
-  #knapper {
+  /* #knapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -287,7 +292,7 @@ img {
     max-width: 500px;
     position: fixed;
     top: 20%;
-  }
+  } */
 
   .navknap {
     height: 35px;
