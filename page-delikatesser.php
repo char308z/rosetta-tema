@@ -42,8 +42,8 @@ get_header();
             </div>
           </div>
         </nav>
-        </div>
         <section id="loopView"></section> 
+      </div>
  <div id="deliDetalje"></div>
     </main>
 
