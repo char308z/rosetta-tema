@@ -38,7 +38,7 @@ get_header();
               Vælg en kategori
             </button>
             <div id="myDropdown" class="dropdown-content">
-              <button></button>
+              <!-- <button></button> -->
             </div>
           </div>
         </nav>
@@ -150,6 +150,11 @@ get_header();
         document
           .querySelector("#lukKnap")
           .addEventListener("click", () => (popup.style.display = "none"));
+          popup.addEventListener("click", () => (popup.style.display= "none"))
+      }
+
+      function toggleDropdown() {
+        document.getElementById("myDropdown").classList.toggle("show");
       }
 
       function toggleDropdown() {
