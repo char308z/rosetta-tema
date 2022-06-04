@@ -54,39 +54,6 @@ main nav {
   grid-row: 2/3;
 }
 
-/* #knapper {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 20%;
-} */
-
-/* .navknap {
-  max-width: 200px;
-  max-height: 75px;
-  display: flex;
-  justify-content: center;
-  background-color: #fffcf5;
-  color: #38471d;
-  border: 2px solid #38471d;
-  padding: 0.7rem 1rem;
-  font-weight: bold;
-  font-size: 1.5rem;
-  font-family: aw-conqueror-didot, serif;
-  cursor: pointer;
-  border-radius: 3px;
-} */
-
-#deliTitle {
-  font-size: 1.5rem;
-  color: #38471d;
-}
-
-#deliBeskrivelse {
-  font-size: 1rem;
-  color: #81353c;
-}
-
 #loopView {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -236,11 +203,8 @@ img {
 .dropbtn {
   width: 100%;
   font-weight: bold;
-  font-size: 1.5rem;
   font-family: aw-conqueror-didot, serif;
   cursor: pointer;
-  /* background-color: #f6f6f6 !important;
-  border: 1px solid #92d3ec; */
 }
 
 .dropbtn,
@@ -250,7 +214,6 @@ img {
   margin-bottom: 5px;
   border: 1px solid #38471d !important;
   color: #38471d !important;
-  min-width: 230px;
 }
 
 .dropbtn:hover,
@@ -267,11 +230,8 @@ img {
 .dropdown-content {
   display: none !important;
   position: absolute;
-  /* min-width: 230px; */
   z-index: 1;
   height: 400px;
-  /* overflow: auto; */
-  /* border: 1px solid #92d3ec !important; */
   border-radius: 5px;
   background-color: #fffcf5;
 }
@@ -280,12 +240,6 @@ img {
   display: block !important;
   gap: 5px;
 }
-
-/* #filtrering {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-} */
 
 .delikatesse-grid {
   display: grid;
@@ -302,27 +256,6 @@ img {
     font-size: 1em;
   }
 
-  .dropdown-content {
-    min-width: 150px;
-  }
-
-  /* #knapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-height: 500px;
-    max-width: 500px;
-    position: fixed;
-    top: 20%;
-  } */
-
-  .navknap {
-    height: 35px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-  }
-
   section article {
     max-width: 300px;
   }
@@ -333,18 +266,6 @@ img {
   }
 }
 
-/* @media (max-width: 700px) {
-  section article {
-    max-width: 200px;
-  }
-
-  section article .pristilfoej {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-} */
-
 @media (min-width: 992px) {
   .dropdown-content {
     min-width: 230px;
@@ -352,7 +273,7 @@ img {
 
   .dropbtn,
   #myDropdown button {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   main {
@@ -363,6 +284,7 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: 45px;
   }
+
   main nav button {
     margin: 0 1.5em 0.5em;
     margin: 0 5.5% 3.5%;
@@ -384,5 +306,15 @@ img {
 
   h3 {
     font-size: 2rem;
+  }
+
+  #deliTitle {
+    font-size: 1.5rem;
+    color: #38471d;
+  }
+
+  #deliBeskrivelse {
+    font-size: 1rem;
+    color: #81353c;
   }
 }
