@@ -14,16 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>singleView</title>
-  </head>
-  <body>
+
     <aside id="popup">
       <article>
         <a href="#" id="lukKnap"></a>
@@ -38,11 +29,22 @@ get_header();
     </aside>
 
     <main>
-      <h1>Delikatesser</h1>
-      <nav id="knapper">
-        <button></button>
-      </nav>
-      <section id="loopView"></section>
+      <h1 id="delikatesser-overskrift">Delikatesser</h1>
+      <div class="delikatesser-grid">
+        <nav id="knapper">
+          <div class="dropdown">
+            <!-- <option value="">Vælg</option> -->
+            <button onclick="toggleDropdown()" class="dropbtn">
+              Vælg en kategori
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <button></button>
+            </div>
+          </div>
+        </nav>
+        </div>
+        <section id="loopView"></section> 
+ <div id="deliDetalje"></div>
     </main>
 
     <template>
@@ -51,8 +53,10 @@ get_header();
         <div id="deliIndhold">
           <h3 id="deliTitle" class="navn">Navn</h3>
           <p id="deliBeskrivelse" class="beskrivelse"></p>
-          <h4 class="pris"></h4>
-          <button>Tilføj</button>
+          <div class="pristilfoej">
+            <h4 class="pris"></h4>
+            <button>Tilføj</button>
+          </div>
         </div>
       </article>
     </template>
@@ -74,36 +78,40 @@ get_header();
 
       function start() {
         console.log("nu er vi i start");
-
         hentData();
       }
+
       async function hentData() {
         let response = await fetch(deliUrl);
         let kateResponse = await fetch(kateUrl);
 
         delikatesser = await response.json();
         kategorier = await kateResponse.json();
+
         visDelikatesser();
         opretKnapper();
       }
 
       function opretKnapper() {
         console.log("vi laver knapper");
-        knapListe.textContent = "";
+        // knapListe.textContent = "";
         kategorier.forEach((kategori) => {
-          knapListe.innerHTML += `<button  data-kategorier="${kategori.id}">${kategori.name}</button>`;
+          document.querySelector(
+            "#myDropdown"
+          ).innerHTML += `<button class="filter" data-kategorier="${kategori.id}">${kategori.name}</button>`;
         });
 
         addEventListenerTilKnap();
       }
 
       function addEventListenerTilKnap() {
-        document.querySelectorAll("#knapper button").forEach((knap) => {
-          knap.addEventListener("click", filtrerDelikatesser);
+        document.querySelectorAll("#myDropdown button").forEach((elm) => {
+          elm.addEventListener("click", filtrerDelikatesser);
         });
       }
 
       function filtrerDelikatesser() {
+        document.getElementById("myDropdown").classList.toggle("show");
         filter = this.dataset.kategorier;
         console.log(filter);
         visDelikatesser();
@@ -143,9 +151,12 @@ get_header();
           .querySelector("#lukKnap")
           .addEventListener("click", () => (popup.style.display = "none"));
       }
+
+      function toggleDropdown() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
     </script>
-  </body>
-</html>
+ 
 
 <?php
 get_footer();

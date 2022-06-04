@@ -41,7 +41,7 @@ h3 {
 }
 
 h4 {
-  color: red;
+  color: rgb(157, 255, 0);
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -52,27 +52,46 @@ html p {
 main nav {
   grid-column: 1/2;
   grid-row: 2/3;
-  /* position: fixed; */
-}
-#knapper {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
+/* #knapper {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 20%;
+} */
+
+/* .navknap {
+  max-width: 200px;
+  max-height: 75px;
+  display: flex;
+  justify-content: center;
+  background-color: #fffcf5;
+  color: #38471d;
+  border: 2px solid #38471d;
+  padding: 0.7rem 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: aw-conqueror-didot, serif;
+  cursor: pointer;
+  border-radius: 3px;
+} */
+
 #deliTitle {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  color: #38471d;
 }
 
 #deliBeskrivelse {
-  font-size: 0.8rem;
+  font-size: 1rem;
+  color: #81353c;
 }
 
 #loopView {
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 30px;
 }
 
@@ -81,16 +100,48 @@ main nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: white;
+  padding: 7rem 1.5rem;
+  box-shadow: 2px 8px 49px -7px rgba(0, 0, 0, 0.72);
+  font-family: raleway, sans-serif;
+  gap: 10px;
+}
+
+.pristilfoej {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pris {
+  font-family: raleway, sans-serif;
+  font-size: 1.7rem;
+  color: #38471d;
 }
 
 section article {
   display: flex;
   flex-direction: column;
+  margin-bottom: 45px;
+  max-width: 400px;
+}
+
+section article img {
+  background-color: #81353c;
 }
 
 section article button,
 aside article button {
   place-self: end;
+  background-color: #81353c;
+  color: white;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-family: raleway, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 3px;
 }
 
 aside {
@@ -121,6 +172,10 @@ aside article img {
   grid-row: 2/5;
   object-fit: contain;
   height: unset;
+}
+
+#popup {
+  z-index: 100;
 }
 
 #popupIndhold {
@@ -162,6 +217,129 @@ aside article img {
 #lukKnap:after {
   transform: rotate(-45deg);
 }
+
+#delikatesser-overskrift {
+  margin-top: 20%;
+}
+
+/*DROPDOWN*/
+img {
+  width: 100%;
+}
+
+#knapper {
+  position: sticky;
+  top: 2%;
+}
+
+#myDropdown button,
+.dropbtn {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: aw-conqueror-didot, serif;
+  cursor: pointer;
+  /* background-color: #f6f6f6 !important;
+  border: 1px solid #92d3ec; */
+}
+
+.dropbtn,
+#myDropdown button {
+  display: grid;
+  place-self: center;
+  margin-bottom: 5px;
+  border: 1px solid #38471d;
+  color: #38471d;
+  min-width: 230px;
+}
+
+.dropbtn:hover,
+#myDropdown button:hover {
+  background-color: #38471d;
+  color: #fffcf5;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block !important;
+}
+
+.dropdown-content {
+  display: none !important;
+  position: absolute;
+  min-width: 230px;
+  z-index: 1;
+  height: 400px;
+  overflow: auto;
+  /* border: 1px solid #92d3ec !important; */
+  border-radius: 5px;
+  background-color: #fffcf5;
+}
+
+.show {
+  display: block !important;
+  gap: 5px;
+}
+
+/* #filtrering {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+} */
+
+.delikatesse-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 700px) {
+  .dropbtn,
+  #myDropdown button {
+    font-size: 1em;
+  }
+
+  .dropdown-content {
+    min-width: 150px;
+  }
+
+  /* #knapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 500px;
+    max-width: 500px;
+    position: fixed;
+    top: 20%;
+  } */
+
+  .navknap {
+    height: 35px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  section article {
+    max-width: 300px;
+  }
+  #loopview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* @media (max-width: 700px) {
+  section article {
+    max-width: 200px;
+  }
+
+  section article .pristilfoej {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} */
 
 @media (min-width: 992px) {
   main {
