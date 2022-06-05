@@ -194,8 +194,7 @@ aside article img {
   transform: rotate(-45deg);
 }
 
-#delikatesser-overskrift,
-h1 {
+#delikatesser-overskrift {
   margin-top: 20% !important;
 }
 
@@ -303,6 +302,10 @@ img {
     font-size: 3rem !important;
   }
 
+  h1 {
+    margin-top: 50% !important;
+  }
+
   h2 {
     font-size: 1.25rem !important;
   }
@@ -313,6 +316,10 @@ img {
 }
 
 @media (min-width: 992px) {
+  h1 {
+    margin-top: 20% !important;
+  }
+
   .dropdown-content {
     min-width: 230px;
   }
