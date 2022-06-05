@@ -29,13 +29,30 @@ main {
   overflow: hidden;
 }
 
-h1 {
+delikatesser-overskrift {
   grid-column: 1/3;
   grid-row: 1/2;
   font-size: 10rem;
   text-align: center;
   color: pink;
 }
+
+ h1 {
+   font-size: 5rem;
+   font-family: lindsey-signature, sans-serif !important;
+ }
+
+ h2 {
+   font-size: 3rem;
+   font-family: aw-conqueror-didot, serif !important;
+ }
+
+ h3 {
+   font-size: 2rem;
+   font-family: raleway, sans-serif !important;
+   font-weight: 700 !important;
+   font-style: normal !important;
+ }
 
 h3 {
   font-size: 1rem;
