@@ -4,6 +4,12 @@
   margin: 0%;
 }
 
+button:focus {
+  color: #fffcf5 !important;
+  background-color: #38471d !important;
+  text-decoration: none !important;
+}
+
 img {
   max-width: 100%;
 }
