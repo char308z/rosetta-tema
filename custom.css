@@ -194,8 +194,9 @@ aside article img {
   transform: rotate(-45deg);
 }
 
-#delikatesser-overskrift {
-  margin-top: 20%;
+#delikatesser-overskrift,
+h1 {
+  margin-top: 20% !important;
 }
 
 /*DROPDOWN*/
