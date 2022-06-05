@@ -204,10 +204,6 @@ img {
   font-weight: bold;
   font-family: aw-conqueror-didot, serif;
   cursor: pointer;
-}
-
-.dropbtn,
-#myDropdown button {
   display: grid;
   place-self: center;
   margin-bottom: 5px;
