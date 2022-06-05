@@ -291,15 +291,15 @@ img {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 }
 
@@ -353,14 +353,14 @@ img {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 5rem !important;
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 3rem !important;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 }
