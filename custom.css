@@ -388,6 +388,13 @@ body
   > div.elementor-element.elementor-element-cf664a2.e-container--column.e-container
   > div.elementor-element.elementor-element-49f3951.elementor-widget.elementor-widget-heading
   > div
-  > h1 {
+  > h1,
+body
+  > div.elementor.elementor-8
+  > div.elementor-element.elementor-element-5f06eb3.e-container--row.e-container
+  > div.elementor-element.elementor-element-38bfdae.e-container--column.e-container
+  > div
+  > div
+  > img {
   margin-top: 0% !important;
 }
