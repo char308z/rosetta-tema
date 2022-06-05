@@ -46,7 +46,8 @@ h1 {
 }
 
 h2,
-button {
+button,
+a {
   font-family: aw-conqueror-didot, serif !important;
   font-weight: bold !important;
 }
