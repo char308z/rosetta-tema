@@ -320,18 +320,18 @@ img {
     padding: 2% 6%;
   }
 
-  h1 {
+  h1.elementor-heading-title {
     font-size: 5rem;
     font-family: lindsey-signature, sans-serif !important;
   }
 
-  h2 {
+  h2.elementor-heading-title {
     font-size: 3rem;
     font-family: aw-conqueror-didot, serif !important;
     font-weight: bold;
   }
 
-  h3 {
+  h3.elementor-heading-title {
     font-size: 2rem;
     font-family: raleway, sans-serif !important;
     font-weight: 700 !important;
