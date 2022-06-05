@@ -37,7 +37,10 @@ h1 {
 }
 
 h2,
-a {
+body
+  > div.elementor.elementor-8
+  > div.elementor-element.elementor-element-6859dd3.e-container--row.e-container
+  a {
   font-family: aw-conqueror-didot, serif !important;
   font-weight: bold !important;
 }
