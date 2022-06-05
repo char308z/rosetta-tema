@@ -29,11 +29,7 @@ main {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-.delikatesser-overskrift {
-=======
 h1 {
->>>>>>> marikka
   grid-column: 1/3;
   grid-row: 1/2;
   font-size: 10rem;
