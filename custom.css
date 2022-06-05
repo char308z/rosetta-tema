@@ -317,7 +317,7 @@ img {
 
 @media (min-width: 992px) {
   h1 {
-    margin-top: 20% !important;
+    margin-top: 40% !important;
   }
 
   .dropdown-content {
@@ -380,4 +380,14 @@ img {
   h3 {
     font-size: 2rem !important;
   }
+}
+
+body
+  > div.elementor.elementor-8
+  > div.elementor-element.elementor-element-5f06eb3.e-container--row.e-container
+  > div.elementor-element.elementor-element-cf664a2.e-container--column.e-container
+  > div.elementor-element.elementor-element-49f3951.elementor-widget.elementor-widget-heading
+  > div
+  > h1 {
+  margin-top: 0% !important;
 }
