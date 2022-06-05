@@ -327,7 +327,8 @@ img {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 5rem !important;
+    font-family: lindsey-signature, sans-serif !important;
   }
 
   h3 {
