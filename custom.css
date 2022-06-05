@@ -34,7 +34,6 @@ h1 {
   grid-row: 1/2;
   font-size: 10rem;
   text-align: center;
-  color: pink;
 }
 
 h3 {
@@ -42,7 +41,6 @@ h3 {
 }
 
 h4 {
-  color: rgb(157, 255, 0);
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -328,15 +326,16 @@ img {
   }
 
   h2 {
-  font-size: 3rem;
-  font-family: aw-conqueror-didot, serif !important;
+    font-size: 3rem;
+    font-family: aw-conqueror-didot, serif !important;
+    font-weight: bold;
   }
 
   h3 {
     font-size: 2rem;
     font-family: raleway, sans-serif !important;
-      font-weight: 700 !important;
-      font-style: normal !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
   }
 
   #deliTitle {
