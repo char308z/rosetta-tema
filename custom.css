@@ -29,34 +29,22 @@ main {
   overflow: hidden;
 }
 
-#delikatesser-overskrift {
+h1 {
   grid-column: 1/3;
   grid-row: 1/2;
   font-size: 10rem;
   text-align: center;
-}
-
-h4 {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-h1 {
-  font-size: 5rem;
-  font-family: lindsey-signature, sans-serif !important;
-}
-
-h2 {
-  font-size: 3rem;
-  font-family: aw-conqueror-didot, serif !important;
-  font-weight: bold;
+  color: pink;
 }
 
 h3 {
-  font-size: 2rem;
-  font-family: raleway, sans-serif !important;
-  font-weight: 700 !important;
-  font-style: normal !important;
+  font-size: 1rem;
+}
+
+h4 {
+  color: rgb(157, 255, 0);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 html p {
@@ -332,6 +320,23 @@ img {
     margin: 8% auto;
     border-radius: 4px;
     padding: 2% 6%;
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-family: lindsey-signature, sans-serif !important;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-family: aw-conqueror-didot, serif !important;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-family: raleway, sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
   }
 
   #deliTitle {
