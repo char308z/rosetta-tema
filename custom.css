@@ -415,6 +415,10 @@ img {
     font-size: 7vw !important;
   }
 
+  #en_del_af {
+    margin-left: 6rem;
+  }
+
   h2 {
     font-size: 3rem !important;
   }
@@ -437,5 +441,4 @@ img {
 
 #en_del_af {
   color: #38471d !important;
-  margin-left: 6rem;
 }
