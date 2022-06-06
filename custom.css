@@ -334,7 +334,8 @@ img {
     justify-content: center;
   }
 
-  #delikatesser-overskrift {
+  #delikatesser-overskrift,
+  #dit_pizzeria {
     font-size: 3rem !important;
   }
 
@@ -408,7 +409,8 @@ img {
     color: #38471d;
   }
 
-  #delikatesser-overskrift {
+  #delikatesser-overskrift,
+  #dit_pizzeria {
     font-size: 7vw !important;
   }
 
@@ -435,8 +437,4 @@ img {
 #en_del_af {
   color: #38471d !important;
   margin-left: 6rem;
-}
-
-#dit_pizzeria {
-  font-size: 7rem !important;
 }
