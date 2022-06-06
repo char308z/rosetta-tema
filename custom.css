@@ -422,7 +422,7 @@ img {
 }
 
 /*Den ene H1'er på forsiden skal IKKE have margin-top */
-body
+/* body
   > div.elementor.elementor-8
   > div.elementor-element.elementor-element-5f06eb3.e-container--row.e-container
   > div.elementor-element.elementor-element-cf664a2.e-container--column.e-container
@@ -430,8 +430,12 @@ body
   > div
   > h1 {
   margin-top: 0% !important;
-}
+} */
 
 #en_del_af {
   color: #38471d !important;
+}
+
+#dit_pizzaria {
+  font-size: 5rem !important;
 }

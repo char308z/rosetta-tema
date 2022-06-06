@@ -118,13 +118,14 @@ get_header();
         addEventListenerTilKnap();
       }
 
-      
+    // Her tilføjer vi eventlistenere til knapperne
       function addEventListenerTilKnap() {
         document.querySelectorAll("#myDropdown button").forEach((elm) => {
           elm.addEventListener("click", filtrerDelikatesser);
         });
       }
 
+      // Dropdownmenuen vises, og filtreringen
       function filtrerDelikatesser() {
         document.getElementById("myDropdown").classList.toggle("show");
         filter = this.dataset.kategorier;
@@ -132,6 +133,7 @@ get_header();
         visDelikatesser();
       }
 
+      // Dropdownmenuen vises, og filtreringen
       function visDelikatesser() {
         console.log(delikatesser);
         loop.innerHTML = "";
