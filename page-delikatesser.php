@@ -125,7 +125,7 @@ get_header();
         });
       }
 
-      // Dropdownmenuen vises, og filtreringen
+      // Dropdownmenuen vises, og filtreringen starter
       function filtrerDelikatesser() {
         document.getElementById("myDropdown").classList.toggle("show");
         filter = this.dataset.kategorier;
@@ -133,10 +133,11 @@ get_header();
         visDelikatesser();
       }
 
-      // Dropdownmenuen vises, og filtreringen
+      // Delikatesserne loopes frem i denne funktion
       function visDelikatesser() {
         console.log(delikatesser);
         loop.innerHTML = "";
+        // For hver delikatesse defineret i database, skal disse klones og vises
         delikatesser.forEach((delikatesse) => {
           if (
             filter == "alle" ||
@@ -155,6 +156,7 @@ get_header();
           }
         });
 
+        // Denne funktion sker når man klikker på et article: Så skal pop-up vinduet vises
         function visDetaljer(delikatesse) {
           console.log(this);
           popup.querySelector("h3").textContent = delikatesse.title.rendered;
@@ -164,16 +166,15 @@ get_header();
           popup.querySelector("img").src = delikatesse.billede.guid;
           popup.style.display = "block";
         }
+
+        // Når man klikker på krydset, skal display: none; på asiden igen
         document
           .querySelector("#lukKnap")
           .addEventListener("click", () => (popup.style.display = "none"));
           popup.addEventListener("click", () => (popup.style.display= "none"))
       }
 
-      function toggleDropdown() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
+        // Når man klikker på dropdown-menuen, kommer klassen show på, således man kan se kategorierne
       function toggleDropdown() {
         document.getElementById("myDropdown").classList.toggle("show");
       }
