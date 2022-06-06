@@ -35,7 +35,7 @@ get_header();
           <div class="dropdown">
             <!-- <option value="">Vælg</option> -->
             <button onclick="toggleDropdown()" class="dropbtn">
-              Vælg en kategori <i style="text-rendering:auto">&#xf107;</i>
+              Vælg en kategori <i></i>
             </button>
             <div id="myDropdown" class="dropdown-content">
               <!-- <button></button> -->
