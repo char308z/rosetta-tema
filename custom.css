@@ -73,7 +73,7 @@ main nav {
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   gap: 30px;
 }
 
@@ -256,6 +256,22 @@ img {
   gap: 5px;
 }
 
+.arrow {
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#dropDownText {
+  margin: 0%;
+}
+
 .delikatesse-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -264,7 +280,8 @@ img {
 @media (max-width: 700px) {
   main {
     padding: 0;
-    grid-template-columns: 1fr !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    overflow: visible;
   }
 
   #deliTitle {
@@ -305,11 +322,11 @@ img {
   }
 
   h1 {
-    margin-top: 5% !important;
+    margin-top: 3% !important;
   }
 
   h2 {
-    font-size: 1.25rem !important;
+    font-size: 2.5rem !important;
   }
 
   h3 {
@@ -321,17 +338,6 @@ img {
   /*Alle overskrifter skal have margin-top*/
   h1 {
     margin-top: 5% !important;
-  }
-
-  /*Pizzabilledet på forsiden*/
-  body
-    > div.elementor.elementor-8
-    > div.elementor-element.elementor-element-5f06eb3.e-container--row.e-container
-    > div.elementor-element.elementor-element-38bfdae.e-container--column.e-container
-    > div
-    > div
-    > img {
-    margin-top: 40%;
   }
 
   .dropdown-content {
