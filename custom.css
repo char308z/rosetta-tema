@@ -199,7 +199,7 @@ aside article img {
 }
 
 #delikatesser-overskrift {
-  margin-top: 20% !important;
+  margin-top: 5% !important;
 }
 
 /*DROPDOWN*/
@@ -305,7 +305,7 @@ img {
   }
 
   h1 {
-    margin-top: 50% !important;
+    margin-top: 5% !important;
   }
 
   h2 {
@@ -320,7 +320,7 @@ img {
 @media (min-width: 992px) {
   /*Alle overskrifter skal have margin-top*/
   h1 {
-    margin-top: 40% !important;
+    margin-top: 5% !important;
   }
 
   /*Pizzabilledet på forsiden*/
