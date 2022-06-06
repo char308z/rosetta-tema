@@ -316,7 +316,6 @@ img {
     justify-content: center;
   }
 
-  h1,
   #delikatesser-overskrift {
     font-size: 3rem !important;
   }
@@ -388,9 +387,8 @@ img {
     color: #38471d;
   }
 
-  h1,
   #delikatesser-overskrift {
-    font-size: 5rem !important;
+    font-size: 7vw !important;
   }
 
   h2 {
