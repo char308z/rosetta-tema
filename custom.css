@@ -3,7 +3,7 @@
   padding: 0%;
   margin: 0%;
 }
-
+/*Når knappen er aktiv, ses denne styling*/
 button:focus {
   color: #fffcf5 !important;
   background-color: #38471d !important;
@@ -38,10 +38,12 @@ h4 {
   font-size: 1.2rem;
 }
 
+/*Regel for ALLE H1'ere*/
 h1 {
   font-family: lindsey-signature, sans-serif !important;
 }
 
+/*Regel for knapperne på forsiden samt knapper i menuen, men som vist ikke virker*/
 h2,
 body
   > div.elementor.elementor-8
@@ -61,6 +63,7 @@ h3 {
   font-style: normal !important;
 }
 
+/*Alle paragraffer må max besta af 65 anslag*/
 html p {
   max-width: 65ch;
 }
@@ -124,6 +127,9 @@ aside article button {
   border-radius: 3px;
 }
 
+/*------------------POP-UP------------------*/
+
+/*Pop-up har display none. Display: block; aktiveres i <script> når man toggler en article*/
 aside {
   display: none;
   position: fixed;
@@ -154,6 +160,7 @@ aside article img {
   height: unset;
 }
 
+/* Pop-up vinduet skal ligge sig ovenpå alt andet */
 #popup {
   z-index: 100;
 }
@@ -182,6 +189,7 @@ aside article img {
 #lukKnap:hover {
   opacity: 1;
 }
+
 #lukKnap:before,
 #lukKnap:after {
   position: absolute;
@@ -198,11 +206,13 @@ aside article img {
   transform: rotate(-45deg);
 }
 
+/*Delikatessers H1 har sin egen styling, da den ikke bliver påvirket andre
+elementor-regler og derfor ikke kan tilpasses på samme måde*/
 #delikatesser-overskrift {
   margin-top: 5% !important;
 }
 
-/*DROPDOWN*/
+/*------------------DROPDOWN------------------*/
 img {
   width: 100%;
 }
@@ -212,6 +222,7 @@ img {
   top: 2%;
 }
 
+/*Styling af alle knapperne i drop-down menuen*/
 #myDropdown button,
 .dropbtn {
   width: 100%;
@@ -225,6 +236,7 @@ img {
   color: #38471d !important;
 }
 
+/*Styling af alle knapperne når man HOVER over dem i drop-down menuen*/
 .dropbtn:hover,
 #myDropdown button:hover,
 #tilfoej-hover:hover {
@@ -251,13 +263,15 @@ img {
   width: 100%;
 }
 
+/*Denne class tilføjes vores aside, når man trykker på en article*/
 .show {
   display: block !important;
   gap: 5px;
 }
 
+/*Denne pil optræder i drop-down menuen*/
 .arrow {
-  border: solid black;
+  border: solid #38471d;
   border-width: 0 1px 1px 0;
   display: inline-block;
   padding: 4px;
@@ -272,10 +286,14 @@ img {
   margin: 0%;
 }
 
+/*Dette grid er til for, at placere drop-down-knappen til venstre for vores loopview*/
+
 .delikatesse-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
+
+/*-------------MOBIL----------------*/
 
 @media (max-width: 700px) {
   main {
@@ -333,6 +351,8 @@ img {
   }
 }
 
+/*-------------DESKTOP----------------*/
+
 @media (min-width: 992px) {
   /*Alle overskrifter skal have margin-top*/
   h1 {
@@ -362,6 +382,7 @@ img {
     margin: 0 5.5% 3.5%;
   }
 
+  /*Når aside er i desktop, skal der være et grid*/
   aside article {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -400,6 +421,7 @@ img {
   }
 }
 
+/*Den ene H1'er på forsiden skal IKKE have margin-top */
 body
   > div.elementor.elementor-8
   > div.elementor-element.elementor-element-5f06eb3.e-container--row.e-container
@@ -408,4 +430,8 @@ body
   > div
   > h1 {
   margin-top: 0% !important;
+}
+
+#en_del_af {
+  color: #38471d;
 }

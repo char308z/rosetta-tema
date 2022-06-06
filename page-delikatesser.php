@@ -29,8 +29,10 @@ get_header();
     </aside>
 
     <main>
+    <!--H1 har et ID, da den skal styles anderledes end de andre H1'ere på sitet--> 
       <h1 id="delikatesser-overskrift">Delikatesser</h1>
       <div class="delikatesser-grid">
+        <!--Her er vores dropdown-menu--> 
         <nav id="knapper">
           <div class="dropdown">
             <!-- <option value="">Vælg</option> -->
@@ -43,10 +45,13 @@ get_header();
           </div>
         </nav>
         </div>
+
+        <!--Denne section skal indeholde vores articles--> 
         <section id="loopView"></section> 
- <div id="deliDetalje"></div>
+        <div id="deliDetalje"></div>
     </main>
 
+          <!--Dette er skabelonen til vores delikatesser--> 
     <template>
       <article>
         <img src="" alt="" />
@@ -62,13 +67,17 @@ get_header();
     </template>
 
     <script>
+      // Her opretter vi variabler
       let delikatesser = [];
       let filter = "alle";
       let kategorier = [];
+
+      // Her opretter vi konstanter
       const loop = document.querySelector("#loopView");
       const template = document.querySelector("template").content;
       const knapListe = document.querySelector("#knapper");
       const popup = document.querySelector("#popup");
+
       const deliUrl =
         "http://charlottefranciska.dk/kea/rosetta/wp-json/wp/v2/delikatesse?per_page=100";
       const kateUrl =
@@ -81,6 +90,7 @@ get_header();
         hentData();
       }
 
+      // I den asynkrone funktion HENTES(fetch) vores data fra databasen
       async function hentData() {
         let response = await fetch(deliUrl);
         let kateResponse = await fetch(kateUrl);
@@ -88,13 +98,17 @@ get_header();
         delikatesser = await response.json();
         kategorier = await kateResponse.json();
 
+
         visDelikatesser();
         opretKnapper();
       }
 
+      // Her opretter vi knapper til vores kategorier
       function opretKnapper() {
         console.log("vi laver knapper");
         // knapListe.textContent = "";
+
+        //For hver kategori defineret i vores custom-taxonomy, skal der oprettes en knap
         kategorier.forEach((kategori) => {
           document.querySelector(
             "#myDropdown"
@@ -104,6 +118,7 @@ get_header();
         addEventListenerTilKnap();
       }
 
+      
       function addEventListenerTilKnap() {
         document.querySelectorAll("#myDropdown button").forEach((elm) => {
           elm.addEventListener("click", filtrerDelikatesser);
